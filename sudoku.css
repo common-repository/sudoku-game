@@ -1,0 +1,41 @@
+
+@keyframes turn {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+.turn 
+{
+	animation-name: turn;
+	animation-duration: 2s;
+}
+
+
+.sudoku *, .sudoku_controller * {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none;
+} 
+.sudoku .overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+} 
+
+.poss {
+	position:absolute;
+} 
+
+.sudoku_controller {
+	text-align:center
+}
+ 
+.field{
+	display: inline-block;
+	text-align:center; 
+	cursor:pointer; 
+}
+
+
